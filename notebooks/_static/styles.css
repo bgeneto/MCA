@@ -1,0 +1,43 @@
+<style>
+div.aviso {    
+    color: #356A89;
+    background-color: #D4EAF7;
+    border-left: 5px solid #3C82E3;
+    padding: 0.5em;
+} 
+  
+.admonition, details {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.admonition.note, details.note { /* csslint allow: adjoining-classes */
+    color: #2e6b89;
+    background-color: #e2f0f7;
+    border-color: #bce8f1;
+}
+
+.admonition.warning, details.warning { /* csslint allow: adjoining-classes */
+    color: #7a6032;
+    background-color: #fffae5;
+    border-color: #fbeed5;
+}
+
+.admonition.danger, details.danger { /* csslint allow: adjoining-classes */
+    color: #7f3130;
+    background-color: #fde3e3;
+    border-color: #eed3d7;
+}
+
+.admonition-title, summary {
+    font-weight: bold;
+    text-align: left;
+}
+
+.admonition>p:last-child, details>p:last-child {
+    margin-bottom: 0;
+}
+</style>
