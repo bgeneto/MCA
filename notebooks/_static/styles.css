@@ -1,12 +1,12 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inconsolata&family=Playfair+Display&display=swap');
 
 div.text_cell_render {
-    font-family: 'Open Sans', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
+    font-family: 'Playfair Display', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
 }
 
 div#toc {
-    font-family: 'Open Sans', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
+    font-family: 'Playfair Display', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
 }
 
 .CodeMirror {
