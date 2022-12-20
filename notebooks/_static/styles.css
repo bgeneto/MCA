@@ -10,7 +10,7 @@
     --heading-code-font-family: var(--code-font-family);
 }
 
-.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+.CodeMirror, .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
     font-family: var(--code-font-family);
     font-size: 14pt;
 }
