@@ -1,6 +1,6 @@
 <script>
     function luc21893_refresh_cell(cell) {
-        if ( (cell.innerHTML.match(/@hidden/i)) == null ) return;
+        if ( (cell.innerHTML.match(/#@title/i)) == null ) return;
         if ( cell.luc21893 ) return;
         cell.luc21893 = true;
         var div = document.createElement('DIV');
