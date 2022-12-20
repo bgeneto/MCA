@@ -1,20 +1,18 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inconsolata&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-div.text_cell_render {
-    font-family: 'Playfair Display', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
+:root {
+    /* Fonts */
+    --main-font-family: 'Lato', 'sans-serif';
+    --code-font-family: 'Inconsolata', 'monospace';
+    --headings-font-family: 'Lato', 'sans-serif';
+    --heading-code-font-family: var(--code-font-family);
 }
 
-div#toc {
-    font-family: 'Playfair Display', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
-}
-
-.CodeMirror {
-     font-family: Inconsolata, monospace;
-}
-
-code {
-    font-family: Inconsolata, monospace;
+.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+    font-family: var(--code-font-family);
+    font-size: 14pt;
 }
 
 div.aviso {
