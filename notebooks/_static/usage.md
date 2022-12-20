@@ -12,6 +12,21 @@ html += style.read().decode('utf-8')
 HTML(html)
 ```
 
+Another option using events:
+
+```python
+from urllib.request import urlopen
+script = urlopen("https://raw.githubusercontent.com/bgeneto/MCA/main/notebooks/_static/scripts.js")
+html = script.read().decode('utf-8')
+style = urlopen("https://raw.githubusercontent.com/bgeneto/MCA/main/notebooks/_static/styles.css")
+html += style.read().decode('utf-8')
+
+def css_styling():
+  display(HTML(html))
+
+get_ipython().events.register('pre_run_cell', css_styling)
+```
+
 # Using in your notebook
 
 ## To hide a cell 
