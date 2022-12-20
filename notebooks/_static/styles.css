@@ -1,4 +1,22 @@
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inconsolata&display=swap');
+
+div.text_cell_render {
+    font-family: 'Open Sans', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
+}
+
+div#toc {
+    font-family: 'Open Sans', 'Computer Modern', 'Helvetica Neue', 'Arial', 'Helvetica', 'Geneva', sans-serif;
+}
+
+.CodeMirror {
+     font-family: Inconsolata, monospace;
+}
+
+code {
+    font-family: Inconsolata, monospace;
+}
+
 div.aviso {
     color: #356A89;
     background-color: #D4EAF7;
