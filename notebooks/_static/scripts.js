@@ -1,55 +1,55 @@
 <script>
-    function luc21893_refresh_cell(cell) {
+    function bgeneto1877_refresh_cell(cell) {
         if ( (cell.innerHTML.match(/#@title/i)) == null ) return;
-        if ( cell.luc21893 ) return;
-        cell.luc21893 = true;
-        var div = document.createElement('DIV');
+        if ( cell.bgeneto1877 ) return;
+        cell.bgeneto1877 = true;
+        var div = document.createElement('div');
         cell.parentNode.insertBefore( div, cell.nextSibling );
         div.style.textAlign = 'center';
-        var a = document.createElement('A');
+        var a = document.createElement('a');
         div.appendChild(a);
         a.href='#'
-        a.luc21893 = cell;
-        a.setAttribute( 'onclick', "luc21893_toggle(this); return false;" );
+        a.bgeneto1877 = cell;
+        a.setAttribute( 'onclick', "bgeneto1877_toggle(this); return false;" );
         cell.style.visibility='hidden';
         cell.style.position='absolute';
         a.innerHTML = '[show code]';
 
     }
 
-    function luc21893_refresh() {
+    function bgeneto1877_refresh() {
         if( document.querySelector('.code_cell .input') == null ) {
             // for exported html
             var codeCells = document.querySelectorAll('.jp-InputArea')
             codeCells[0].style.visibility = 'hidden';
             codeCells[0].style.position = 'absolute';
             for( var i = 1; i < codeCells.length; i++ ) {
-                luc21893_refresh_cell(codeCells[i].parentNode)
+                bgeneto1877_refresh_cell(codeCells[i].parentNode)
             }
-            window.onload = luc21893_refresh;
+            window.onload = bgeneto1877_refresh;
         }
         else {
             // for jupyter editor
             var codeCells = document.querySelectorAll('.code_cell .input');
             for( var i = 0; i < codeCells.length; i++ ) {
-                luc21893_refresh_cell(codeCells[i])
+                bgeneto1877_refresh_cell(codeCells[i])
             }
-            window.setTimeout( luc21893_refresh, 1000 )
+            window.setTimeout( bgeneto1877_refresh, 1000 )
         }
     }
 
-    function luc21893_toggle(a) {
-        if( a.luc21893.style.visibility=='hidden' ) {
-            a.luc21893.style.visibility='visible';
-            a.luc21893.style.position='';
+    function bgeneto1877_toggle(a) {
+        if( a.bgeneto1877.style.visibility=='hidden' ) {
+            a.bgeneto1877.style.visibility='visible';
+            a.bgeneto1877.style.position='';
             a.innerHTML = '[hide code]';
         }
         else {
-            a.luc21893.style.visibility='hidden';
-            a.luc21893.style.position='absolute';
+            a.bgeneto1877.style.visibility='hidden';
+            a.bgeneto1877.style.position='absolute';
             a.innerHTML = '[show code]';
         }
     }
 
-    luc21893_refresh()
+    bgeneto1877_refresh()
 </script>
