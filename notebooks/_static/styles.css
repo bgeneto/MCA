@@ -6,13 +6,11 @@
     /* Fonts */
     --main-font-family: 'Lato', 'sans-serif';
     --code-font-family: 'Inconsolata', 'monospace';
-    --headings-font-family: 'Lato', 'sans-serif';
     --heading-code-font-family: var(--code-font-family);
 }
 
-.CodeMirror, .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+code, kbd, pre, samp, .CodeMirror, .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
     font-family: var(--code-font-family);
-    font-size: 14pt;
 }
 
 div.aviso {
