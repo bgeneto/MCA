@@ -15,15 +15,15 @@ HTML(html)
 Another option using events:
 
 ```python
-from urllib.request import urlopen
-script = urlopen("https://raw.githubusercontent.com/bgeneto/MCA/main/notebooks/_static/scripts.js")
-html = script.read().decode('utf-8')
-style = urlopen("https://raw.githubusercontent.com/bgeneto/MCA/main/notebooks/_static/styles.css")
-html += style.read().decode('utf-8')
-
+#@title
+from IPython.display import HTML, display
+with open("./_static/scripts.js") as f:
+    scripts = f.read()
+with open("./_static/styles.css") as f:
+    styles = f.read()
+html = scripts + styles
 def css_styling():
   display(HTML(html))
-
 get_ipython().events.register('pre_run_cell', css_styling)
 ```
 
