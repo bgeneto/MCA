@@ -2,8 +2,6 @@ numba
 matplotlib
 seaborn
 plotly 
-sphinx-inline-tabs
-sphinx-design
-jupyterlab-myst
 numpy
 scipy
+tabulate
