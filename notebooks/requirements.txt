@@ -1,7 +1,0 @@
-numba
-matplotlib
-seaborn
-plotly 
-numpy
-scipy
-tabulate
